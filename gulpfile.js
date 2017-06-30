@@ -16,9 +16,9 @@ var banner = ['/*!\n',
     ''
 ].join('');
 
-// Compiles SCSS files from /scss into /css
+// Compiles SCSS files from /styl into /css
 gulp.task('sass', function() {
-    return gulp.src('scss/agency.scss')
+    return gulp.src('styl/agency.stylus')
         .pipe(sass())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(gulp.dest('css'))
@@ -90,7 +90,7 @@ gulp.task('browserSync', function() {
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync', 'sass', 'minify-css', 'minify-js'], function() {
-    gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('styl/*.stylus', ['sass']);
     gulp.watch('css/*.css', ['minify-css']);
     gulp.watch('js/*.js', ['minify-js']);
     // Reloads the browser whenever HTML or JS files change
