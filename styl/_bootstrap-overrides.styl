@@ -1,0 +1,25 @@
+// Bootstrap overrides for this template
+.text-primary {
+  color: $theme-primary !important;
+}
+
+.btn-primary {
+  font-weight: 700;
+  button-variant(white, $theme-primary, $theme-primary);
+  heading-font;
+}
+
+.btn-xl {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 20px 40px;
+  border-radius: 3px;
+  button-variant(white, $theme-primary, $theme-primary);
+  heading-font;
+}
+
+@media (max-width: 576px) {
+  nav > .container {
+    width: 100%;
+  }
+}

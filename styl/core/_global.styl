@@ -21,44 +21,49 @@ a
   &.active
     color: darken($theme-primary, 10%)
 
-section {
-    padding: 100px 0;
-    h2.section-heading {
-        font-size: 40px;
-        margin-top: 0;
-        margin-bottom: 15px;
-    }
-    h3.section-subheading {
-        font-size: 16px;
-        font-weight: 400;
-        font-style: italic;
-        margin-bottom: 75px;
-        text-transform: none;
-        @include serif-font;
-    }
-}
+h1,h2,h3,h4,h5,h6
+  a
+    color #333
 
-@media(min-width:768px) {
-    section {
-        padding: 150px 0;
-    }
-}
+section
+  padding: 100px 0;
+
+  h2.section-heading
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+  h3.section-subheading
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family serif-font;
+
+  @media(min-width:768px)
+    &
+      padding: 150px 0;
 
 // Highlight color customization
-::-moz-selection {
+::-moz-selection,
+::selection
     background: $theme-primary;
     text-shadow: none;
-}
 
-::selection {
-    background: $theme-primary;
-    text-shadow: none;
-}
+img::selection,
+img::-moz-selection
+    background: transparent
 
-img::selection {
-    background: transparent;
-}
+.hide
+  display none
 
-img::-moz-selection {
-    background: transparent;
-}
+.visually-hidden
+  border 0
+  clip rect(0,0,0,0)
+  width 1px
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
