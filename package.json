@@ -27,10 +27,10 @@
             "url": "http://xuuud.com"
         }
     ],
-  "scripts": {
-    "stylus": "mkdir css & stylus -m -w styl/agency.styl -o css/"
-  },
-  "contributors": [
+    "scripts": {
+        "stylus": "mkdir css & stylus -m -w styl/agency.styl -o css/"
+    },
+    "contributors": [
         "David Miller (http://davidmiller.io/)"
     ],
     "repository": {
@@ -42,6 +42,7 @@
         "font-awesome": "^4.7.0",
         "jquery": "^3.2.1",
         "jquery.easing": "^1.4.1",
+        "normalize.css": "^7.0.0",
         "tether": "^1.4.0"
     },
     "devDependencies": {
