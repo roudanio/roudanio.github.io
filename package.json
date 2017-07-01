@@ -1,28 +1,58 @@
 {
-  "name": "agency",
-  "title": "Agency",
-  "version": "3.3.7+1",
-  "homepage": "http://startbootstrap.com/template-overviews/agency",
-  "author": "Start Bootstrap",
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE"
-  },
-  "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "browser-sync": "^2.13.0",
-    "font-awesome": "^4.6.3",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.10",
-    "gulp-header": "^1.8.7",
-    "gulp-less": "^3.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2",
-    "gulp-uglify": "^1.5.4",
-    "jquery": "^1.11.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BlackrockDigital/startbootstrap-agency.git"
-  }
+    "title": "Roudan.io Homepage",
+    "name": "roudan.io",
+    "version": "0.1.0",
+    "description": "Homepage for Roudan Studio",
+    "keywords": [
+        "homepage",
+        "studio",
+        "portfolio",
+        "design",
+        "full-stack"
+    ],
+    "homepage": "http://roudan.io/",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
+        "email": "meathill@gmail.com"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Meathill",
+            "url": "http://meathill.com",
+            "email": "meathill@gmail.com"
+        },
+        {
+            "name": "Eggeast",
+            "url": "http://xuuud.com"
+        }
+    ],
+    "scripts": {
+        "stylus": "mkdir css & stylus -m -w styl/agency.styl -o css/"
+    },
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/roudanio/roudanio.github.io.git"
+    },
+    "dependencies": {
+        "bootstrap": "^4.0.0-alpha.6",
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.2.1",
+        "jquery.easing": "^1.4.1",
+        "normalize.css": "^7.0.0",
+        "tether": "^1.4.0"
+    },
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "3.5.0",
+        "gulp-header": "1.8.8",
+        "gulp-htmlmin": "^3.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-replace": "^0.6.1",
+        "gulp-stylus": "^2.6.0",
+        "gulp-uglify": "^2.1.2"
+    }
 }

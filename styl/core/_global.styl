@@ -1,0 +1,69 @@
+// Global styling for this template
+html
+  box-sizing border-box
+  color #333
+  font-size 14px
+  touch-action manipulation
+  -ms-touch-action manipulation
+
+body
+  font 1rem/1.5 $body-font
+  font-weight 400
+  -webkit-tap-highlight-color $theme-primary
+  -webkit-overflow-scrolling touch
+
+a
+  color: $theme-primary;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active
+    color: darken($theme-primary, 10%)
+
+h1,h2,h3,h4,h5,h6
+  a
+    color #333
+
+section
+  padding: 100px 0;
+
+  h2.section-heading
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+  h3.section-subheading
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family serif-font;
+
+  @media(min-width:768px)
+    &
+      padding: 150px 0;
+
+// Highlight color customization
+::-moz-selection,
+::selection
+    background: $theme-primary;
+    text-shadow: none;
+
+img::selection,
+img::-moz-selection
+    background: transparent
+
+.hide
+  display none
+
+.visually-hidden
+  border 0
+  clip rect(0,0,0,0)
+  width 1px
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
