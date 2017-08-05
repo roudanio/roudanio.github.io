@@ -1,7 +1,7 @@
 {
     "title": "Roudan.io Homepage",
     "name": "roudan.io",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Homepage for Roudan Studio",
     "keywords": [
         "homepage",
@@ -10,7 +10,7 @@
         "design",
         "full-stack"
     ],
-    "homepage": "http://roudan.io/",
+    "homepage": "https://roudan.io/",
     "bugs": {
         "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
         "email": "meathill@gmail.com"
@@ -47,12 +47,14 @@
     },
     "devDependencies": {
         "gulp": "^3.9.1",
-        "gulp-clean-css": "3.5.0",
+        "gulp-clean-css": "^3.7.0",
         "gulp-header": "1.8.8",
         "gulp-htmlmin": "^3.0.0",
+        "gulp-imagemin": "^3.3.0",
         "gulp-rename": "^1.2.2",
         "gulp-replace": "^0.6.1",
         "gulp-stylus": "^2.6.0",
-        "gulp-uglify": "^2.1.2"
+        "gulp-uglify": "^3.0.0",
+        "nib": "^1.1.2"
     }
 }

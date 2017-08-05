@@ -5,10 +5,10 @@ const rename = require("gulp-rename");
 const uglify = require('gulp-uglify');
 const htmlMin = require('gulp-htmlmin');
 const replace = require('gulp-replace');
+const imageMin = require('gulp-imagemin');
 
 const repoExp = /node_modules\/([\w\-\.]+)\/(dist|build\/)?/g;
 const CDN = require('./cdn.json');
-
 
 // Compiles SCSS files from /styl into /css
 gulp.task('stylus', function() {
@@ -43,6 +43,12 @@ gulp.task('html', () => {
     }))
     .pipe(rename('index.html'))
     .pipe(gulp.dest('./'));
+});
+
+gulp.task('image', () => {
+  return gulp.src('./assets/img/**')
+    .pipe(imageMin())
+    .pipe(gulp.dest('./img'));
 });
 
 // Default task
