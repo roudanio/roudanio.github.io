@@ -1,37 +1,19 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/)
+# 肉蛋工作室
 
-[Agency](http://startbootstrap.com/template-overviews/agency/) is a one page agency portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, a responsive timeline, and a working PHP contact form.
+> 基于 [Start Bootstrap](http://startbootstrap.com/) - [Agency](http://startbootstrap.com/template-overviews/agency/) 改造。
 
-## Getting Started
+你好，我们是肉山和蛋东，资深全栈开发者和精英设计师，愿意为您开发最好的网站和应用。
 
-Several options are available to get started quickly:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/agency/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-agency.git`
-* Fork the repo
+## 联系我们
 
-## Developing Using Source Files
+邮件：[meathill@qq.com](mailto:meathill@qq.com)
 
-To use the source files, you will need to have npm installed globally along with Gulp.js. To start:
-* Run `npm install` in the root directory
-* Run `gulp dev` and edit the files as needed
+微信：
 
-If you need to update the plugins included with this template, simply run the following tasks:
-* First run `npm update` to update the dependencies
-* Then run `gulp copy` to copy the new versions to their proper destinations
+![微信二维码](https://roudan.io/img/weixin.jpg)
 
-## Bugs and Issues
+## 版权声明
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-agency/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/agency/).
+所有作品权利根据与甲方协商确定，大部分归属于甲方，请勿滥用。
 
-## Creator
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2017 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-agency/blob/gh-pages/LICENSE) license.
+本站代码使用 [MIT](./LICENSE) 开放，文案使用 [CC-BY-NC-4.0](http://creativecommons.org/licenses/by-nc/4.0/) 开放。
