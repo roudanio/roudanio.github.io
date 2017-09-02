@@ -7,7 +7,7 @@ const htmlMin = require('gulp-htmlmin');
 const replace = require('gulp-replace');
 const imageMin = require('gulp-imagemin');
 
-const repoExp = /node_modules\/([\w\-\.]+)\/(dist|build\/)?/g;
+const repoExp = /node_modules\/([\w\-\.]+)\/((?:dist|build)\/)?/g;
 const CDN = require('./cdn.json');
 
 // Compiles SCSS files from /styl into /css
