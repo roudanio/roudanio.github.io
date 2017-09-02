@@ -3,12 +3,12 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
   touch-action: manipulation;
   -ms-touch-action: manipulation;
 }
 body {
-  font: 1rem/1.5 '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei",sans-serif';
+  font: 1rem/1.5 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: 400;
   -webkit-tap-highlight-color: #fed136;
   -webkit-overflow-scrolling: touch;
@@ -793,24 +793,35 @@ section#contact .text-danger {
 footer {
   padding: 25px 0;
   text-align: center;
+  text-transform: uppercase;
 }
 footer span.copyright {
   font-size: 90%;
   line-height: 40px;
-  text-transform: none;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-@include heading-font;
 footer ul.quicklinks {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: distribute;
+  -moz-box-pack: distribute;
+  -o-box-pack: distribute;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   font-size: 90%;
   line-height: 40px;
   margin-bottom: 0;
-  text-transform: none;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-@include heading-font;
-ul.social-buttons {
+footer ul.social-buttons {
   margin-bottom: 0;
 }
-ul.social-buttons li a {
+footer ul.social-buttons li a {
   font-size: 20px;
   line-height: 40px;
   display: block;
@@ -828,9 +839,9 @@ ul.social-buttons li a {
   outline: none;
   background-color: #222;
 }
-ul.social-buttons li a:hover,
-ul.social-buttons li a:focus,
-ul.social-buttons li a:active {
+footer ul.social-buttons li a:hover,
+footer ul.social-buttons li a:focus,
+footer ul.social-buttons li a:active {
   background-color: #fed136;
 }
 /*# sourceMappingURL=agency.css.map */
