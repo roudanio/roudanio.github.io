@@ -2,7 +2,6 @@ const {parallel, src, dest} = require('gulp');
 const stylus = require('gulp-stylus');
 const cleanCSS = require('gulp-clean-css');
 const rename = require("gulp-rename");
-const uglify = require('gulp-uglify');
 const htmlMin = require('gulp-htmlmin');
 const replace = require('gulp-replace');
 const imageMin = require('gulp-imagemin');
@@ -21,14 +20,6 @@ const stylusTask = function() {
     }))
     .pipe(rename('agency.min.css'))
     .pipe(dest('css'));
-};
-
-// Minify custom JS
-const minifyJs = function() {
-  return src('js/agency.js')
-    .pipe(uglify())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(dest('js'));
 };
 
 const html = () => {
@@ -52,4 +43,4 @@ const image = () => {
 };
 
 // Default task
-exports.default = parallel(stylusTask, minifyJs, html);
+exports.default = parallel(stylusTask, html);
