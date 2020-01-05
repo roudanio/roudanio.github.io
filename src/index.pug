@@ -1,0 +1,242 @@
+doctype html
+html(lang='zh-cmn-Hans')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+    meta(name='viewport' content='width=device-width,initial-scale=1,shrink-to-fit=no')
+    meta(name='description' content='你好，我们是肉（山）蛋（东）工作室，我们是非常资深的全栈工程师和设计师，可以完成各种 Web 开发，有需求请随时联系。')
+    meta(name='keywords' content='H5,外包,设计，全栈')
+    meta(name='author' content='Meathill <meathill@gmail.com>')
+    title 肉蛋工作室
+    //  Bootstrap core CSS
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' rel='stylesheet')
+    link(href='https://fonts.lug.ustc.edu.cn/css?family=Montserrat:400,700' rel='stylesheet')
+    //  Custom fonts for this template
+    link(href='https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css' rel='stylesheet')
+    //  Custom styles for this template
+    link(rel='shortcut icon' type='image/png' href=require('./img/logos/favicon.png'))
+  body#page-top
+    //  Navigation
+    nav.navbar.navbar-expand-md.fixed-top.navbar-toggleable-md.navbar-inverse#mainNav
+      .container
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarResponsive' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+          i.fa.fa-bars
+        a.navbar-brand(href='#page-top')
+          img(src=require('./img/logos/logo.png'))
+        h1.visually-hidden 肉蛋工作室
+        .collapse.navbar-collapse#navbarResponsive
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='#services') 提供服务
+            li.nav-item
+              a.nav-link(href='#portfolio') 成功案例
+            li.nav-item
+              a.nav-link(href='#about') 团队历史
+            li.nav-item
+              a.nav-link(href='#team') 团队成员
+            li.nav-item
+              a.nav-link(href='#contact') 联系我们
+    //  Header
+    header.masthead
+      .container
+        .intro-text
+          .intro-lead-in 欢迎访问我们的工作室
+          .intro-heading 肉山和蛋东竭诚为您服务
+          a.btn.btn-xl(href='#services') 你们都提供什么？
+    //  Services
+    section#services
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading 我们提供以下服务
+            h3.section-subheading.text-muted 资深全栈工程师和设计师为您服务。
+        .row
+          .col-md-4
+            p.text-center
+              span.fa-stack.fa-4x
+                i.fa.fa-circle.fa-stack-2x.text-primary
+                i.fa.fa-star.fa-stack-1x.fa-inverse
+            h4.service-heading.text-center H5 开发
+            p.text-muted
+              | 我们有出色的设计，细致的沟通，丰富的细节。
+              br
+              | 可以实现各种神奇的交互效果。
+              br
+              | 支持各种功能，如投票、报名等。
+
+          .col-md-4
+            p.text-center
+              span.fa-stack.fa-4x
+                i.fa.fa-circle.fa-stack-2x.text-primary
+                i.fa.fa-laptop.fa-stack-1x.fa-inverse
+            h4.service-heading.text-center 网站建设
+            p.text-muted
+              | 我们有丰富的网站建设经验。
+              br
+              | 从前期沟通，到实际开发，到日后运营，都能提供有效的帮助。
+              br
+              | 响应式、前后台、移动端、电商，应有尽有，一应俱全。
+
+          .col-md-4
+            p.text-center
+              span.fa-stack.fa-4x
+                i.fa.fa-circle.fa-stack-2x.text-primary
+                i.fa.fa-mobile-phone.fa-stack-1x.fa-inverse
+            h4.service-heading.text-center 小程序开发
+            p.text-muted
+              | 我们有丰富的小程序开发经验。
+              br
+              | 可以快速开发各种高可用性的小程序，
+              br
+              | 提供操作便利的后台，以及全面的运维支撑。
+
+    //  Portfolio Grid
+    section.bg-light#portfolio
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading 成功案例
+            h3.section-subheading.text-muted 这些案例帮我们收获了客户的好评。
+        .row
+          .col-md-4.col-sm-6.portfolio-item
+            .portfolio-link(data-toggle='modal', href='#portfolio-modal-1')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-fluid(src=require('./img/portfolio/wukong.jpg') alt='《悟空传》发行通知')
+            .portfolio-caption
+              h4 《悟空传》发行通知
+              p.text-muted 微信 H5，建议在手机上观看。
+          .col-md-4.col-sm-6.portfolio-item
+            .portfolio-link(data-toggle='modal', href='#portfolio-modal-2')
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-fluid(src=require('./img/portfolio/motie.jpg') alt='开放：磨铁 IP 大会')
+            .portfolio-caption
+              h4 开放：磨铁 IP 大会
+              p.text-muted 微信 H5，建议在手机上观看。
+          .col-md-4.col-sm-6.portfolio-item
+            .portfolio-link(data-toggle="modal", href="#portfolio-modal-3")
+              .portfolio-hover
+                .portfolio-hover-content
+                  i.fa.fa-plus.fa-3x
+              img.img-fluid(
+                src=require('./img/portfolio/pw.jpg'),
+                alt="PartyWow，一个有趣的深度活动平台",
+              )
+
+            .portfolio-caption
+              h4 PartyWow
+              p.text-muted 小程序
+
+    //  About
+    section#about
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading 团队历史
+            h3.section-subheading.text-muted 罗马不是一天建成的。
+        .row
+          .col-lg-12
+            ul.timeline
+              li
+                .timeline-image
+                  img.rounded-circle.img-fluid(src=require('./img/about/1.jpg') alt)
+                .timeline-panel
+                  .timeline-heading
+                    h4 2017-07-01
+                    h4.subheading 旅程开始
+                  .timeline-body
+                    p.text-muted.
+
+                      创业失败的两人，因为项目的因素，走到一起。
+
+    //  Team
+    section.bg-light#team
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading 王牌团队
+            h3.section-subheading.text-muted 资深全栈 + 资深设计师
+        .row
+          .col-sm-6
+            .team-member
+              a(href='https://meathill.com/')
+                img.mx-auto.rounded-circle(
+                  src=require('./img/team/1.jpg'),
+                  alt="Meathill （肉山）",
+                  loading="lazy",
+                )
+              h4
+                a(href='https://meathill.com/') Meathill（肉山）
+              p.text-muted 全栈工程师
+              ul.list-inline.social-buttons
+                li.list-inline-item
+                  a(href='https://twitter.com/meathill1')
+                    i.fa.fa-twitter
+                li.list-inline-item
+                  a(href='https://weibo.com/meathill')
+                    i.fa.fa-weibo
+                li.list-inline-item
+                  a(href='https://www.linkedin.com/in/meathill/')
+                    i.fa.fa-linkedin
+          .col-sm-6
+            .team-member
+              img.mx-auto.rounded-circle(src=require('./img/eggeast.jpg') alt='蛋东')
+              h4 蛋东
+              p.text-muted 设计师/画师/摄影师
+              ul.list-inline.social-buttons
+                li.list-inline-item
+                  a(href='https://weibo.com/83181951')
+                    i.fa.fa-weibo
+        .row.hide
+          .col-lg-8.offset-lg-2.text-center
+            p.large.text-muted.
+
+              10+开发经验和设计经验。
+
+    //  Contact
+    section#contact
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading 联系我们
+            h3.section-subheading.text-muted 有需求，就找我们。
+        .row.justify-content-md-center
+          .col-md-4
+            img.img-thumbnail(src=require('./img/weixin.jpg'))
+    //  Footer
+    footer
+      .container
+        .row
+          .col-md-4
+            span.copyright Copyright © 肉蛋工作室 2017-2019
+          .col-md-4
+            ul.list-inline.social-buttons
+              li.list-inline-item
+                a(href='https://twitter.com/meathill1')
+                  i.fa.fa-twitter
+              li.list-inline-item
+                a(href='https://weibo.com/meathill')
+                  i.fa.fa-weibo
+              li.list-inline-item
+                a(href='https://blog.meathill.com/')
+                  i.fa.fa-rss
+          .col-md-4
+            ul.list-inline.quicklinks
+              li.list-inline-item
+                a(href='https://github.com/roudanio/roudanio.github.io') GitHub
+              li.list-inline-item
+                a(href='https://blackrockdigital.github.io/startbootstrap-agency/') Agency
+    //  Portfolio Modals
+    include portfolio/wukong
+    include portfolio/motie
+    include portfolio/pw
+
+    //  Bootstrap core JavaScript
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js')
+    //  Custom scripts for this template
+    script(type='text/javascript' src='http://tajs.qq.com/stats?sId=63289491' charset='UTF-8')

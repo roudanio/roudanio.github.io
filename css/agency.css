@@ -1,12 +1,3 @@
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  color: #333;
-  font-size: 16px;
-  touch-action: manipulation;
-  -ms-touch-action: manipulation;
-}
 body {
   font: 1rem/1.5 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: 400;
@@ -89,7 +80,6 @@ background-cover {
   color: #fff;
   border-color: #fed136;
   background-color: #fed136;
-heading-font
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -151,7 +141,6 @@ fieldset[disabled] .btn-primary.focus {
   color: #fff;
   border-color: #fed136;
   background-color: #fed136;
-heading-font
 }
 .btn-xl:focus,
 .btn-xl.focus {
@@ -221,7 +210,6 @@ fieldset[disabled] .btn-xl.focus {
   color: #fff;
   border: 0;
   background-color: #fed136;
-heading-font
   z-index: 1;
 }
 #mainNav .navbar-brand {
@@ -235,7 +223,6 @@ heading-font
   padding: 0.75em 0;
   letter-spacing: 1px;
   color: #fff;
-heading-font
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link.active {
@@ -279,11 +266,10 @@ heading-font
 header.masthead {
   text-align: center;
   color: #fff;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../src/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-background-cover
 }
 header.masthead .intro-text {
   padding-top: 100px;
@@ -294,14 +280,12 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 22px;
   margin-bottom: 25px;
-serif-font
 }
 header.masthead .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
   margin-bottom: 25px;
-heading-font
 }
 @media (min-width: 768px) {
   header.masthead .intro-text {
@@ -313,14 +297,12 @@ heading-font
     font-style: italic;
     line-height: 40px;
     margin-bottom: 25px;
-serif-font
   }
   header.masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
     margin-bottom: 50px;
-heading-font
   }
 }
 .service-heading {
@@ -740,7 +722,7 @@ heading-font
 }
 section#contact {
   background-color: #222;
-  background-image: url("../img/map-image.png");
+  background-image: url("../src/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -769,24 +751,20 @@ section#contact ::-webkit-input-placeholder {
   font-weight: 700;
   color: #eee;
 }
-@include heading-font;
 section#contact :-moz-placeholder {
   font-weight: 700;
   color: #eee;
 /* Firefox 18- */
 }
-@include heading-font;
 section#contact ::-moz-placeholder {
   font-weight: 700;
   color: #eee;
 /* Firefox 19+ */
 }
-@include heading-font;
 section#contact :-ms-input-placeholder {
   font-weight: 700;
   color: #eee;
 }
-@include heading-font;
 section#contact .text-danger {
   color: #e74c3c;
 }

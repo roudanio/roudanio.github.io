@@ -1,58 +1,69 @@
 {
-    "title": "Roudan.io Homepage",
-    "name": "roudan.io",
-    "version": "0.1.1",
-    "description": "Homepage for Roudan Studio",
-    "keywords": [
-        "homepage",
-        "studio",
-        "portfolio",
-        "design",
-        "full-stack"
-    ],
-    "homepage": "https://roudan.io/",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
-        "email": "meathill@gmail.com"
+  "title": "Roudan.io Homepage",
+  "name": "roudan.io",
+  "version": "0.2.0",
+  "description": "Homepage for Roudan.io Studio",
+  "keywords": [
+    "homepage",
+    "studio",
+    "portfolio",
+    "design",
+    "full-stack"
+  ],
+  "homepage": "https://roudan.io/",
+  "bugs": {
+    "url": "https://github.com/BlackrockDigital/startbootstrap-agency/issues",
+    "email": "meathill@gmail.com"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Meathill",
+      "url": "https://blog.meathill.com",
+      "email": "meathill@gmail.com"
     },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Meathill",
-            "url": "http://meathill.com",
-            "email": "meathill@gmail.com"
-        },
-        {
-            "name": "Eggeast",
-            "url": "http://xuuud.com"
-        }
-    ],
-    "scripts": {
-        "stylus": "mkdir css & stylus -m -w styl/agency.styl -o css/"
-    },
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/roudanio/roudanio.github.io.git"
-    },
-    "dependencies": {
-        "bootstrap": "^4.4.1",
-        "font-awesome": "^4.7.0",
-        "jquery": "^3.4.1",
-        "jquery.easing": "^1.4.1",
-        "popper.js": "^1.16.0"
-    },
-    "devDependencies": {
-        "gulp": "^4.0.2",
-        "gulp-clean-css": "^4.2.0",
-        "gulp-header": "^2.0.9",
-        "gulp-htmlmin": "^5.0.1",
-        "gulp-imagemin": "^6.2.0",
-        "gulp-rename": "^1.4.0",
-        "gulp-replace": "^1.0.0",
-        "gulp-stylus": "^2.7.0",
-        "nib": "^1.1.2"
+    {
+      "name": "Eggeast",
+      "url": "https://eggest.com"
     }
+  ],
+  "scripts": {
+    "dev": "webpack-dev-server --config build/webpack.config.js",
+    "build": "webpack --config build/webpack.config.prod.js"
+  },
+  "contributors": [
+    "David Miller (http://davidmiller.io/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roudanio/roudanio.github.io.git"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.4.1",
+    "jquery.easing": "^1.4.1",
+    "lodash": "^4.17.15",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.6.1",
+    "css-loader": "^3.4.0",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^4.0.0-beta.11",
+    "mini-css-extract-plugin": "^0.9.0",
+    "nib": "^1.1.2",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "style-loader": "^1.1.2",
+    "stylus-loader": "^3.0.2",
+    "terser-webpack-plugin": "^2.3.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
 }

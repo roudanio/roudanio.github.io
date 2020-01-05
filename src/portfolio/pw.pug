@@ -1,0 +1,31 @@
+#portfolio-modal-3.portfolio-modal.modal.fade(
+  tabindex='-1',
+  role='dialog',
+  aria-hidden='true',
+)
+  .modal-dialog
+    .modal-content
+      .close-modal(data-dismiss='modal')
+        .lr
+          .rl
+      .container
+        .row.justify-content-center
+          .col-lg-8
+            .modal-body
+              //  Project Details Go Here
+              h2 PartyWow
+              p.item-intro.text-muted 小程序
+              img.img-fluid.d-block.mx-auto.mb-3(src=require('../img/portfolio/pw-qrcode.png'), alt='PartyWow，一个有趣的深度活动平台')
+              p.text-center
+                | 活动报名类小程序，运营方可以上传维护活动，普通网友可以报名参加。
+                br
+                | 有方便好用的后台，使用 Serverless 架构，便于扩展和运维。
+                br
+                | 设计开发约两周。
+
+              ul.list-inline
+                li 分类：小程序,活动报名
+              p
+                button.btn.btn-primary.ml-2(data-dismiss='modal' type='button')
+                  i.fa.fa-times
+                  |  关闭
